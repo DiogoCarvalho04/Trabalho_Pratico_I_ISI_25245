@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "68f5582a6cedf43a1d3be45e"
+  },
+  "execution_id": 2,
+  "topic": "crypto",
+  "date": "2025-10-12",
+  "RecordsByDay": 1,
+  "popularity_score": -0.4472135954999579,
+  "popularity_level": "Normal",
+  "trend": "Estável",
+  "avg_sentiment": -0.10833333333333334,
+  "sentiment_label": "Negativo"
+},
+{
+  "_id": {
+    "$oid": "68f5582a6cedf43a1d3be45f"
+  },
+  "execution_id": 2,
+  "topic": "crypto",
+  "date": "2025-10-13",
+  "RecordsByDay": 1,
+  "popularity_score": -0.4472135954999579,
+  "popularity_level": "Normal",
+  "trend": "Estável",
+  "avg_sentiment": -0.05,
+  "sentiment_label": "Neutro"
+},
+{
+  "_id": {
+    "$oid": "68f5582a6cedf43a1d3be460"
+  },
+  "execution_id": 2,
+  "topic": "crypto",
+  "date": "2025-10-14",
+  "RecordsByDay": 1,
+  "popularity_score": -0.4472135954999579,
+  "popularity_level": "Normal",
+  "trend": "Estável",
+  "avg_sentiment": 0.2922619047619048,
+  "sentiment_label": "Positivo"
+},
+{
+  "_id": {
+    "$oid": "68f5582a6cedf43a1d3be461"
+  },
+  "execution_id": 2,
+  "topic": "crypto",
+  "date": "2025-10-15",
+  "RecordsByDay": 1,
+  "popularity_score": -0.4472135954999579,
+  "popularity_level": "Normal",
+  "trend": "Estável",
+  "avg_sentiment": 0,
+  "sentiment_label": "Neutro"
+},
+{
+  "_id": {
+    "$oid": "68f5582a6cedf43a1d3be462"
+  },
+  "execution_id": 2,
+  "topic": "crypto",
+  "date": "2025-10-17",
+  "RecordsByDay": 3,
+  "popularity_score": 1.7888543819998322,
+  "popularity_level": "Alta",
+  "trend": "Crescimento",
+  "avg_sentiment": 0.12061342592592594,
+  "sentiment_label": "Positivo"
+}]
