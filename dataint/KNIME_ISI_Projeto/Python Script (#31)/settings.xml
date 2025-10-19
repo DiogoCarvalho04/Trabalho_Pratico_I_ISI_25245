@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="python3_command" type="xstring" value=""/>
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010from textblob import TextBlob%%00010from deep_translator import GoogleTranslator%%00010%%00010# Ler a tabela de entrada (dados do KNIME)%%00010df = knio.input_tables[0].to_pandas()%%00010%%00010# Garantir nomes consistentes%%00010df.columns = [col.strip().capitalize() for col in df.columns]  # corrige variações tipo 'title'/'Title'%%00010%%00010raise Exception(&quot;Simulação de erro no processamento&quot;)%%00010%%00010# Função para traduzir texto (PT -&gt; EN)%%00010def translate_text(text):%%00010    try:%%00010        if not isinstance(text, str) or text.strip() == &quot;&quot;:%%00010            return &quot;&quot;%%00010        return GoogleTranslator(source='auto', target='en').translate(text)%%00010    except Exception:%%00010        return text  # se falhar, mantém o original%%00010%%00010# Função para calcular sentimento com TextBlob%%00010def get_sentiment(text):%%00010    try:%%00010        if not isinstance(text, str) or text.strip() == &quot;&quot;:%%00010            return 0.0%%00010        return TextBlob(str(text)).sentiment.polarity%%00010    except Exception:%%00010        return 0.0%%00010%%00010# Classificação simples (com sensibilidade ajustada)%%00010def label(p):%%00010    if p &gt; 0.05:  return &quot;Positivo&quot;%%00010    if p &lt; -0.05: return &quot;Negativo&quot;%%00010    return &quot;Neutro&quot;%%00010%%00010# Escolher o texto principal para análise%%00010# Combina título + descrição se existirem%%00010df[&quot;TextoAnalise&quot;] = df[&quot;Title&quot;].astype(str)%%00010if &quot;Description&quot; in df.columns:%%00010    df[&quot;TextoAnalise&quot;] = df[&quot;TextoAnalise&quot;] + &quot; &quot; + df[&quot;Description&quot;].astype(str)%%00010%%00010# Traduzir, calcular sentimento e classificar%%00010df[&quot;Translated&quot;] = df[&quot;TextoAnalise&quot;].apply(translate_text)%%00010df[&quot;Sentiment&quot;] = df[&quot;Translated&quot;].apply(get_sentiment)%%00010df[&quot;SentimentLabel&quot;] = df[&quot;Sentiment&quot;].apply(label)%%00010%%00010# Exportar tabela de volta para o KNIME%%00010knio.output_tables[0] = knio.Table.from_pandas(df)%%00010"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value=""/>
+                <entry key="used_variable_flawed" type="xboolean" value="false"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes2.script.PythonScriptNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.8.0.v202510031553"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.8.0.v202510031553"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
