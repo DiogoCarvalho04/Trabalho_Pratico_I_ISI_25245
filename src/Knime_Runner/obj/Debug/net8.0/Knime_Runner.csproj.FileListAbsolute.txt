@@ -1,0 +1,14 @@
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\bin\Debug\net8.0\Knime_Runner.exe
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\bin\Debug\net8.0\Knime_Runner.deps.json
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\bin\Debug\net8.0\Knime_Runner.runtimeconfig.json
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\bin\Debug\net8.0\Knime_Runner.dll
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\bin\Debug\net8.0\Knime_Runner.pdb
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\Knime_Runner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\Knime_Runner.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\Knime_Runner.AssemblyInfo.cs
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\Knime_Runner.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\Knime_Runner.dll
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\refint\Knime_Runner.dll
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\Knime_Runner.pdb
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\Knime_Runner.genruntimeconfig.cache
+C:\Users\admin\Desktop\Aulas\Integração de Sistemas de Informação\Projeto_Dia18\Job\Knime_Runner\obj\Debug\net8.0\ref\Knime_Runner.dll
