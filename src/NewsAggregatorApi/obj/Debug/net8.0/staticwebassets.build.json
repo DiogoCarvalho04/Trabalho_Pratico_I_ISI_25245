@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "2dM6YUE4mrMKLlL8ZLw5VfAkY1j3d+dEUcKZ8D2BjYs=",
+  "Source": "NewsAggregatorApi",
+  "BasePath": "_content/NewsAggregatorApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
